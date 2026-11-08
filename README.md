@@ -1,5 +1,13 @@
 # Multi-Service Observability Stack
 
+![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white)
+
 A production-style application stack running entirely in Docker. Seven containers work together: a user request enters through Nginx, gets handled by a Python API, data is stored in PostgreSQL and cached in Redis, and everything is monitored with Prometheus and visualized in Grafana.
 
 ---
@@ -262,3 +270,9 @@ REDIS_PORT=6379
 ```
 
 The app reads these via `os.getenv()`. Docker Compose injects them into containers via `env_file: .env`.
+
+---
+
+## Author
+
+**Denis Nazarov** — DevOps Engineer · [GitHub](https://github.com/spaceman5789) · [Portfolio](https://denzo-portfolio.site)
